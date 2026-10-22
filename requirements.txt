@@ -1,4 +1,4 @@
 flask
 requests
-anthropic
+google-genai
 gunicorn
