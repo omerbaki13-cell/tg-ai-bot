@@ -21,7 +21,7 @@ def webhook():
     if text and chat_id:
         try:
             cevap = client.models.generate_content(
-                model="gemini-2.5-flash",
+                model="gemini-3.8-flash",
                 contents=text,
                 config=types.GenerateContentConfig(
                     system_instruction="Kısa ve yardımcı cevaplar ver. Türkçe yaz.",
