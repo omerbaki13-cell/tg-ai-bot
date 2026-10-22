@@ -29,7 +29,8 @@ def webhook():
                 ),
             )
             yanit = cevap.text or "Cevap üretemedim."
-        except Exception:
+        except Exception as e:
+            print("GEMINI HATASI:", repr(e), flush=True)
             yanit = "Şu an cevap veremiyorum, biraz sonra tekrar dene."
 
         requests.post(
