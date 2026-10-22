@@ -5,7 +5,7 @@ from google import genai
 from google.genai import types
 
 app = Flask(__name__)
-client = genai.Client(api_key=os.environ["AQ.Ab8RN6JJpJFKkmZwSZ2citwCK67mSUi9vrVqcoSb0Hn4f5TO4A"])
+client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 TOKEN = os.environ["TELEGRAM_TOKEN"]
 SECRET = os.environ["WEBHOOK_SECRET"]
 
